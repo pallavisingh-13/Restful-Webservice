@@ -1,0 +1,19 @@
+microservice.contextPath: '/user'
+server:
+  port: 8080
+info:
+  component: User Service
+
+spring:
+  application:
+     name: user-service
+  mvc:
+    dispatch-trace-request: true
+  data:
+    cassandra:
+      contact-points: localhost
+      port          : 9042
+      keyspace-name : pricing
+      username      : cassandra
+      password      : cassandra
+      ssl           : false
